@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
+
+/* Configurações gerais */
+body {
+  font-family: "Quicksand", Arial, sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1,
+.profile h1 {
+  font-family: "Playfair Display SC", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sobre-mim p,
+.projetos p,
+.certificados p {
+  text-align: justify;
+  font-size: 16px;
+}
+
+/* Título */
+.titulo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Playfair Display SC", Arial, sans-serif;
+  line-height: normal;
+  margin: 0;
+}
+
+/* Vídeo de fundo */
+.video-fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(40%);
+}
+
+/* Container principal */
+.container {
+  width: 588px;
+  height: 560px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+/* Perfil */
+.profile {
+  width: 588px;
+  height: 224px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.profile img {
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile h1 {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.profile p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+/* Links principais */
+.links {
+  width: 588px;
+  height: 248px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.links ul li {
+  width: 540px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.links ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: color 0.3s ease;
+}
+
+.links ul li:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.links ul li:hover a {
+  color: #000000;
+}
+
+/* Redes sociais */
+.social-links {
+  width: 588px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
+/* Botão voltar */
+.voltar {
+  position: fixed;
+  bottom: 24px;
+  left: calc(50% - 294px);
+  z-index: 1000;
+}
+
+.voltar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.voltar a:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+}
+
+/* Card do projeto 1 */
+.card-projeto-1 {
+  width: 330px;
+  padding: 12px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.card-projeto-1 img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+.acessar-projeto {
+  color: inherit;
+  font-size: 14px;
+  text-align: center;
+  align-self: center;
+  transition: color 0.3s ease;
+}
+
+.card-projeto-1:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.card-projeto-1:hover .acessar-projeto {
+  color: #000000;
+}
